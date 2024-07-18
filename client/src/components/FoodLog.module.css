@@ -1,0 +1,23 @@
+.btn {
+    background-color: rgb(107, 105, 247);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(153, 136, 248);
+    border-radius: 10px;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+}

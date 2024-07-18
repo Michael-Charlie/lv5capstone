@@ -12,7 +12,7 @@ require('dotenv').config()
 
 app.use(express.json())
 app.use(morgan("dev"))
-app.use(express.static(path.join(_dirname, "client", "dist")))
+app.use(express.static(path.join(__dirname, "client", "dist")))
 
 mongoose.set("strictQuery", true)
 mongoose.connect(process.env.MONGO_URI, (err) => {
@@ -34,7 +34,7 @@ app.use((err, req, res, next) => {
 
 // Launch server
 
-app.get("*", (req, res) => res.sendFile(path.join(dirname, "client", "dist", "index.html")))
+app.get("*", (req, res) => res.sendFile(path.join(__dirname, "client", "dist", "index.html")))
 
 app.listen(process.env.PORT, () => {
     console.log("The server is running on port 8000.")
